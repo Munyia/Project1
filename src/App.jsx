@@ -10,6 +10,8 @@ import Request from './assets/pages/Request'
 import Confirmation from './assets/components/Confirmation'
 import PaymentFailure from './assets/components/PaymentFailure'
 import CarListing from './assets/pages/CarListings'
+import Contact from './assets/pages/Contact'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -27,6 +29,7 @@ function App() {
         <Route path="/confirmation" element={<Confirmation/>} />
         <Route path="/paymentfailure" element={<PaymentFailure/>} />
         <Route path="/carlisting" element={<CarListing/>} />
+        <Route path="/contact" element={<Contact/>} />
       </Routes>
      </BrowserRouter>
     </>
