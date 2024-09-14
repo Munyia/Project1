@@ -8,6 +8,8 @@ import ForgotPassword from './assets/components/ForgotPassword'
 import CheckOut from './assets/pages/CheckOut'
 import Request from './assets/pages/Request'
 import Confirmation from './assets/components/Confirmation'
+import PaymentFailure from './assets/components/PaymentFailure'
+import CarListing from './assets/pages/CarListings'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -23,6 +25,8 @@ function App() {
         <Route path="/checkout" element={<CheckOut/>} />
         <Route path="/request" element={<Request/>} />
         <Route path="/confirmation" element={<Confirmation/>} />
+        <Route path="/paymentfailure" element={<PaymentFailure/>} />
+        <Route path="/carlisting" element={<CarListing/>} />
       </Routes>
      </BrowserRouter>
     </>
